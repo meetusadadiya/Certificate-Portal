@@ -1,0 +1,15 @@
+.Head{
+    padding-top: 0;
+    background: linear-gradient(red,brown);
+}
+.Heading{
+  padding-top: 100px;
+  font-size: 75px;
+  font-family: calibri;
+  text-align: center;
+}
+.Name{
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 200px
+}
