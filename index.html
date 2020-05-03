@@ -1,162 +1,189 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Certificate Generation Portal</title>
-  </head>
-  <body>
-    <div class="top">
-      <div class="navbar">
-        <div class="logocontainer">
-          <a href="https://ieeeaditsb.com">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Certificate Generation Portal</title>
+</head>
+
+<body>
+  <div class="top">
+    <div class="navbar">
+      <div class="logocontainer">
+        <a href="https://ieeeaditsb.com">
           <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/IEEE-ADIT-SB-01-01.png" alt="IEEE" class="logo">
-          </a>
-        </div>
-        <div class="nav">
-          <ul class="navlinks">
-            <li><a href="https://ieeeaditsb.com" class="link">Home</a></li>
-            <li><a href="https://ieeeaditsb.com/events" class="link">Events</a></li>
-            <li><a href="https://ieeeaditsb.com/our-team" class="link">Our Teams</a></li>
-            <li><a href="#name" class="link">Contact Us</a></li>
-            <li><a href="https://ieeeaditsb.com/gallery" class="link">Gallery</a></li>
-        </div>
+        </a>
       </div>
-      <div class="opeiningtext">
-          <p class="ieeeaditsb">IEEE ADIT Student Branch</p>
-          <p class="portalname">Certificate Generation Portal</p>
-          <a href="#text" id="generator"><button type="button" name="button" class="generator">Generate Certificate</button></a>
+      <div class="nav">
+        <ul class="navlinks">
+          <li><a href="https://ieeeaditsb.com" class="link">Home</a></li>
+          <li><a href="https://ieeeaditsb.com/events" class="link">Events</a></li>
+          <li><a href="https://ieeeaditsb.com/our-team" class="link">Our Teams</a></li>
+          <li><a href="#name" class="link">Contact Us</a></li>
+          <li><a href="https://ieeeaditsb.com/gallery" class="link">Gallery</a></li>
       </div>
     </div>
-    <div class="middle" id="middle">
-      <p id="text">Select The Event</p>
-      <div class="firstrow">
-        <div class="row1col1">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/FacebookEvent-Cover-04-scaled.jpg" id="row1col1"
-        onclick="eventselectorrow1col1()"></a>
-        </div>
-        <div class="row1col2">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/Untitled-2-01-1.jpg" id="row1col2" onclick="eventselectorrow1col2()"></a>
-        </div>
-        <div class="row1col3">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_5-scaled.jpg" id="row1col3" onclick="eventselectorrow1col3()"></a>
-      </div>
-      </div>
-      <div class="secondrow">
-        <div class="row2col1">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/Cover-01-scaled.jpg" id="row2col1" onclick="eventselectorrow2col1()"></a>
-        </div>
-        <div class="row2col2">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_12-scaled.jpg" id="row2col2" onclick="eventselectorrow2col2()"></a>
-        </div>
-        <div class="row2col3">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_13-scaled.jpg" id="row2col3" onclick="eventselectorrow2col3()"></a>
-      </div>
-      </div>
-      <div class="thirdrow">
-        <div class="row3col1">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_4-scaled.jpg" id="row3col1" onclick="eventselectorrow3col1()"></a>
-        </div>
-        <div class="row3col2">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_7-scaled.jpg" id="row3col2" onclick="eventselectorrow3col2()"></a>
-        </div>
-        <div class="row3col3">
-        <a href="#textselectedevent">
-        <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_2-scaled.jpg" id="row3col3" onclick="eventselectorrow3col3()"></a>
-        </div>
-      </div>
-      <div class="selection">
-        <div class="info">
-          <form class="information" action="index.html" method="get" onsubmit="infovalidation()">
-            <div class="formemail">
-            <input type="email" name="formemail" id="formemail" placeholder="Enter the registered Email" autocomplete="off"></div>
-            <div class="mobileno">
-            <input type="text" name="mobileno" id="mobileno" maxlength="10" placeholder="Enter the registered Mobile No." autocomplete="off"></div>
-            <div class="generateform">
-            <button id="generateform">Generate Certificate</button>
-          </div>
-          </form>
-        </div>
-        <div class="event">
-          <p id="textselectedevent">Selected Event</p>
-          <img id="selectedevent">
-        </div>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="externallinks">
-        External Links
-        <ul class="pagelinks">
-          <li><a href="https://ieee.org/" class="bottomlinks">IEEE Website</a></li>
-          <li><a href="https://ieeegujaratsection.org/" class="bottomlinks">IEEE Gujarat Section</a></li>
-          <li><a href="https://www.ieeer10.org/" class="bottomlinks">IEEE Asia Pacific Region 10</a></li>
-          <li><a href="https://www.ieee.org/membership/benefits/index.html" class="bottomlinks">IEEE Member Benifits</a></li>
-          <li><a href="https://www.ieee.org/membership/join/index.html" class="bottomlinks">Join IEEE</a></li>
-          <li><a href="https://computer.org" class="bottomlinks">IEEE Computer Society</a></li>
-          <li><a href="https://ias.ieee.org" class="bottomlinks">IEEE Industrial Applications Society</a></li>
-          <li><a href="https://ieee-npss.org" class="bottomlinks">IEEE NPSS</a></li>
-          <li><a href="https://www.ieee-pels.org" class="bottomlinks">IEEE Power Electronics Society</a></li>
-          <li><a href="https://www.ieee-pes.org" class="bottomlinks">IEEE Power & Energy Society</a></li>
-          <li><a href="https://www.ieee-ras.org" class="bottomlinks">IEEE Robotics & Automation Society</a></li>
-          <li><a href="https://sight.ieee.org" class="bottomlinks">IEEE SIGHT</a></li>
-          <li><a href="https://wie.ieee.org" class="bottomlinks">IEEE Women in Engineering</a></li>
-        </ul>
-      </div>
-      <div class="location">
-        Locate Us
-        <div class="Map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.5367024476404!2d72.91501960669748!3d22.52155936284584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4d93862df729%3A0xadbe2043bbfd455b!2sA.%20D.%20Patel%20Institute%20of%20Technology%2C%20New%20Vallabh%20Vidyanagar!5e0!3m2!1sen!2sin!4v1588263160026!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-       </div>
-    </div>
-    <div class="contactus">
-        Contact Us
-        <div class="cuform">
-          <form class="contactform" action="index.html" method="get" onsubmit="formvalidation()">
-            <div class="name"><input type="text" name="name" id="name" placeholder="Your Name(required)" autocomplete="off"></div>
-            <div class="email"><input type="email" name="email" id="email" placeholder="Your Email(required)" autocomplete="off"></div>
-            <div class="subject"><input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off"></div>
-            <div class="msg"><input type="textarea" name="msg" id="msg" autocomplete="off" placeholder="Message"></div>
-            <div class="btn" ><input type="submit" name="btn" id="btn" placeholder="Submit"></div>
-          </form>
-        </div>
+    <div class="opeiningtext">
+      <p class="ieeeaditsb">IEEE ADIT Student Branch</p>
+      <p class="portalname">Certificate Generation Portal</p>
+      <a href="#text" id="generator"><button type="button" name="button" class="generator">Generate
+          Certificate</button></a>
     </div>
   </div>
-    <div class="bottomnav">
-      <div class="copyright">
-        <img src="https://img.icons8.com/metro/26/000000/copyright.png"/ class="copyrightimg" height="15px" width="15px"> 2020 IEEE ADIT Student Branch
+  <div class="middle" id="middle">
+    <p id="text">Select The Event</p>
+    <div class="firstrow">
+      <div class="row1col1">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/FacebookEvent-Cover-04-scaled.jpg" id="row1col1"
+            onclick="selectEvent(this.src)"></a>
       </div>
-      <div class="logos">
-        <!---twitter--->
-        <a href="https://www.twitter.com/aditsbieee">
-        <img src="https://img.icons8.com/material/24/000000/twitter--v1.png"/ class="logoimg"></a>
-        <!---facebook--->
-        <a href="https://www.facebook.com/ADITSBIEEE/">
-        <img src="https://img.icons8.com/android/24/000000/facebook-new.png"/ class="logoimg"></a>
-        <!---linkedln--->
-        <a href="https://www.linkedin.com/in/adit-sb-ieee-b2a431141">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="24" height="24"
-viewBox="0 0 24 24"
-style=" fill:#000000;" class="logoimg">    <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z" ></path></svg></a>
-      <!--instagram--->
-      <a href="https://www.instagram.com/adit_sb_ieee">
-      <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/ height="24px" width="24px" class="logoimg"></a>
-      <!--mail--->
-      <a href="mailto:ieee@adit.ac.in">
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="24" height="24"
-viewBox="0 0 24 24"
-style=" fill:#000000;" class="logoimg">    <path d="M 4 4 C 3.334 4 2.7467656 4.3270781 2.3847656 4.8300781 C 2.1407656 5.1680781 2.2485625 5.6471875 2.6015625 5.8671875 L 11.382812 11.339844 C 11.760812 11.575844 12.239187 11.575844 12.617188 11.339844 L 21.361328 5.8203125 C 21.728328 5.5883125 21.819828 5.0840937 21.548828 4.7460938 C 21.183828 4.2920937 20.627 4 20 4 L 4 4 z M 21.515625 8.0859375 C 21.432 8.0868594 21.347078 8.1099062 21.267578 8.1601562 L 12.617188 13.615234 C 12.239187 13.850234 11.760812 13.849281 11.382812 13.613281 L 2.7304688 8.2226562 C 2.4124687 8.0246562 2 8.2539062 2 8.6289062 L 2 18 C 2 19.105 2.895 20 4 20 L 20 20 C 21.105 20 22 19.105 22 18 L 22 8.5644531 C 22 8.2824531 21.7665 8.0831719 21.515625 8.0859375 z"></path></svg></a>
+      <div class="row1col2">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/Untitled-2-01-1.jpg" id="row1col2"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+      <div class="row1col3">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_5-scaled.jpg" id="row1col3"
+            onclick="selectEvent(this.src)"></a>
       </div>
     </div>
-  </body>
-  <script type="text/javascript" src="script.js"></script>
+    <div class="secondrow">
+      <div class="row2col1">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/04/Cover-01-scaled.jpg" id="row2col1"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+      <div class="row2col2">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_12-scaled.jpg" id="row2col2"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+      <div class="row2col3">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_13-scaled.jpg" id="row2col3"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+    </div>
+    <div class="thirdrow">
+      <div class="row3col1">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_4-scaled.jpg" id="row3col1"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+      <div class="row3col2">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_7-scaled.jpg" id="row3col2"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+      <div class="row3col3">
+        <a href="#textselectedevent">
+          <img src="https://ieeeaditsb.com/wp-content/uploads/2020/03/Event_2-scaled.jpg" id="row3col3"
+            onclick="selectEvent(this.src)"></a>
+      </div>
+    </div>
+    <div class="selection">
+      <div class="info">
+        <form class="information" action="index.html" method="get" onsubmit="infovalidation()">
+          <div class="formemail">
+            <input type="email" name="formemail" id="formemail" placeholder="Enter the registered Email"
+              autocomplete="off"></div>
+          <div class="mobileno">
+            <input type="text" name="mobileno" id="mobileno" maxlength="10"
+              placeholder="Enter the registered Mobile No." autocomplete="off"></div>
+          <div class="generateform">
+            <button id="generateform">Generate Certificate</button>
+          </div>
+        </form>
+      </div>
+      <div class="event">
+        <p id="textselectedevent">Selected Event</p>
+        <img id="selectedevent">
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="externallinks">
+      External Links
+      <ul class="pagelinks">
+        <li><a href="https://ieee.org/" class="bottomlinks">IEEE Website</a></li>
+        <li><a href="https://ieeegujaratsection.org/" class="bottomlinks">IEEE Gujarat Section</a></li>
+        <li><a href="https://www.ieeer10.org/" class="bottomlinks">IEEE Asia Pacific Region 10</a></li>
+        <li><a href="https://www.ieee.org/membership/benefits/index.html" class="bottomlinks">IEEE Member Benifits</a>
+        </li>
+        <li><a href="https://www.ieee.org/membership/join/index.html" class="bottomlinks">Join IEEE</a></li>
+        <li><a href="https://computer.org" class="bottomlinks">IEEE Computer Society</a></li>
+        <li><a href="https://ias.ieee.org" class="bottomlinks">IEEE Industrial Applications Society</a></li>
+        <li><a href="https://ieee-npss.org" class="bottomlinks">IEEE NPSS</a></li>
+        <li><a href="https://www.ieee-pels.org" class="bottomlinks">IEEE Power Electronics Society</a></li>
+        <li><a href="https://www.ieee-pes.org" class="bottomlinks">IEEE Power & Energy Society</a></li>
+        <li><a href="https://www.ieee-ras.org" class="bottomlinks">IEEE Robotics & Automation Society</a></li>
+        <li><a href="https://sight.ieee.org" class="bottomlinks">IEEE SIGHT</a></li>
+        <li><a href="https://wie.ieee.org" class="bottomlinks">IEEE Women in Engineering</a></li>
+      </ul>
+    </div>
+    <div class="location">
+      Locate Us
+      <div class="Map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.5367024476404!2d72.91501960669748!3d22.52155936284584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4d93862df729%3A0xadbe2043bbfd455b!2sA.%20D.%20Patel%20Institute%20of%20Technology%2C%20New%20Vallabh%20Vidyanagar!5e0!3m2!1sen!2sin!4v1588263160026!5m2!1sen!2sin"
+          width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+    <div class="contactus">
+      Contact Us
+      <div class="cuform">
+        <form class="contactform" action="index.html" method="get" onsubmit="formvalidation()">
+          <div class="name"><input type="text" name="name" id="name" placeholder="Your Name(required)"
+              autocomplete="off"></div>
+          <div class="email"><input type="email" name="email" id="email" placeholder="Your Email(required)"
+              autocomplete="off"></div>
+          <div class="subject"><input type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off">
+          </div>
+          <div class="msg"><input type="textarea" name="msg" id="msg" autocomplete="off" placeholder="Message"></div>
+          <div class="btn"><input type="submit" name="btn" id="btn" placeholder="Submit"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="bottomnav">
+    <div class="copyright">
+      <img src="https://img.icons8.com/metro/26/000000/copyright.png" / class="copyrightimg" height="15px" width="15px">
+      2020 IEEE ADIT Student Branch
+    </div>
+    <div class="logos">
+      <!---twitter--->
+      <a href="https://www.twitter.com/aditsbieee">
+        <img src="https://img.icons8.com/material/24/000000/twitter--v1.png" / class="logoimg"></a>
+      <!---facebook--->
+      <a href="https://www.facebook.com/ADITSBIEEE/">
+        <img src="https://img.icons8.com/android/24/000000/facebook-new.png" / class="logoimg"></a>
+      <!---linkedln--->
+      <a href="https://www.linkedin.com/in/adit-sb-ieee-b2a431141">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"
+          style=" fill:#000000;" class="logoimg">
+          <path
+            d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z">
+          </path>
+        </svg></a>
+      <!--instagram--->
+      <a href="https://www.instagram.com/adit_sb_ieee">
+        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" / height="24px" width="24px"
+          class="logoimg"></a>
+      <!--mail--->
+      <a href="mailto:ieee@adit.ac.in">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24"
+          style=" fill:#000000;" class="logoimg">
+          <path
+            d="M 4 4 C 3.334 4 2.7467656 4.3270781 2.3847656 4.8300781 C 2.1407656 5.1680781 2.2485625 5.6471875 2.6015625 5.8671875 L 11.382812 11.339844 C 11.760812 11.575844 12.239187 11.575844 12.617188 11.339844 L 21.361328 5.8203125 C 21.728328 5.5883125 21.819828 5.0840937 21.548828 4.7460938 C 21.183828 4.2920937 20.627 4 20 4 L 4 4 z M 21.515625 8.0859375 C 21.432 8.0868594 21.347078 8.1099062 21.267578 8.1601562 L 12.617188 13.615234 C 12.239187 13.850234 11.760812 13.849281 11.382812 13.613281 L 2.7304688 8.2226562 C 2.4124687 8.0246562 2 8.2539062 2 8.6289062 L 2 18 C 2 19.105 2.895 20 4 20 L 20 20 C 21.105 20 22 19.105 22 18 L 22 8.5644531 C 22 8.2824531 21.7665 8.0831719 21.515625 8.0859375 z">
+          </path>
+        </svg></a>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
 </html>
