@@ -1,0 +1,242 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.top{
+  background: linear-gradient(45deg,#09C6F9,#045DE9);
+  color: white;
+  height: 660px;
+}
+.navbar{
+  display: flex;
+  height: 15vh;
+  width: 97%;
+  margin: auto;
+  align-items: center;
+  animation: fadein 2s ease;
+}
+.logocontainer{
+  flex: 2;
+}
+.logo{
+  margin: 25px;
+  height: 30px;
+  width: 72px;
+}
+.nav{
+  flex: 1.5;
+}
+.navlinks{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.opeiningtext{
+  text-align: center;
+  animation: emerge 2s ease;
+}
+.ieeeaditsb{
+  padding: 100px 0 50px 0;
+  font-size: 60px;
+}
+.portalname{
+  font-size: 40px;
+  padding: 0 0 40px;
+}
+.generator{
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  height: 50px;
+  width: 171px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#generator{
+  text-decoration: none;
+  color: white;
+}
+.middle{
+  background: linear-gradient(#B8C6DB,#F5F7FA);
+  color: #2F4F4F;
+}
+#text{
+  text-align: center;
+  font-size: 50px;
+  padding: 75px;
+  font-weight: bold;
+}
+.firstrow,.secondrow,.thirdrow{
+  margin: 0;
+  text-align: center;
+  display: flex;
+}
+.firstrow img,.secondrow img,.thirdrow img{
+  height: 250px;
+  width: 380px;
+  margin:  30px;
+}
+.row1col1,.row1col2,.row1col3,.row2col1,.row2col2,.row2col3,.row3col1,.row3col2,.row3col3{
+  position: relative;
+}
+#row1col1,#row1col2,#row1col3,#row2col1,#row2col2,#row2col3,#row3col1,#row3col2,#row3col3{
+  transition: 0.5s ease;
+}
+.row1col1:hover #row1col1,.row1col2:hover #row1col2,.row1col3:hover #row1col3,.row2col1:hover #row2col1,.row2col2:hover #row2col2,.row2col3:hover #row2col3,.row3col1:hover #row3col1,.row3col2:hover #row3col2,.row3col3:hover #row3col3{
+  transform: scale(1.1);
+}
+.selection{
+  display: flex;
+  padding: 125px;
+}
+.info{
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 225px;
+}
+.formemail,.mobileno,.generateform{
+  padding-bottom: 40px;
+  padding-right: 20px;
+}
+#formemail,#mobileno,#generateform{
+  font-size: 15px;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: transparent;
+}
+#generateform{
+  width: 60%;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+.event{
+  flex: 1;
+  text-align: center;
+}
+#textselectedevent{
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+#selectedevent{
+  height: 500px;
+  width: 760px;
+  border-radius: 100px;
+  opacity: 0;
+  transition: 5s ease;
+}
+.bottom{
+  background: linear-gradient(#2b4162,#12100e);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  line-height: 100px;
+  font-size: 20px;
+  padding: 20px;
+}
+.externallinks{
+  color: #C0C0C0;
+  padding-bottom: 20px;
+  flex: 1;
+  padding-left: 50px;
+}
+.pagelinks{
+  list-style: none;
+  line-height: 30px;
+  font-size: 15px;
+}
+.bottomlinks{
+  text-decoration: none;
+  color: white;
+}
+.location{
+  color: #C0C0C0;
+  flex: 1;
+  padding-right: 75px;
+}
+.contactus{
+  color: #C0C0C0;
+  flex: 1;
+  padding-right: 50px;
+}
+.cuform{
+  line-height: 30px;
+}
+.name,.email,.subject,.msg,.btn{
+  padding-bottom: 25px;
+}
+#name,#email,#subject,#msg,#btn{
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: transparent;
+  background: #C0C0C0;
+}
+#msg{
+  height: 150px;
+}
+#btn{
+  width: 75px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.bottomnav{
+  background-color: #5D5D5D;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  width: 97%
+  margin:auto;
+}
+.copyright{
+  flex: 4;
+  margin: 10px;
+  font-size: 16px;
+  padding-left: 75px;
+}
+.logos{
+  flex: 1;
+}
+.logoimg{
+  justify-content: space-around;
+  margin: 10px;
+}
+@keyframes emerge {
+  0%{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+@media only screen and (max-width: 1024px) {
+  body{
+    display: none;
+  }
+}
